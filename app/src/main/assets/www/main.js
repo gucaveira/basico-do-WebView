@@ -2,7 +2,7 @@
 var btn = document.getElementById("btnjavascript");
 
 btn.addEventListener("click", function(){
-    android.enviaParaNativo(getTextWebView())
+    jsInterfaceNoAndroid.recebendoDaWeb(getTextWebView())
    document.getElementById('busca').value = ''
 });
 
@@ -13,5 +13,5 @@ function getTextWebView() {
 
 function enviaParaWebView(message){
         document.getElementById("busca").value = message;
-        android.limpar(message)
+        jsInterfaceNoAndroid.limpar(message)
 }
